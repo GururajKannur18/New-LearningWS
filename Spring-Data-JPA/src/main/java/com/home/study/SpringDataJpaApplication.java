@@ -16,7 +16,7 @@ public class SpringDataJpaApplication {
 	}
 
 	@Bean
-	public CommandLineRunner CustomerData(CustomerRepository repository) {
+	public CommandLineRunner demo(CustomerRepository repository) {
 
 		return (args) -> {
 			repository.save(new Customer("Jack", "Baur"));
